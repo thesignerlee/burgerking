@@ -51,9 +51,9 @@ header {
 main {
     width:1440px; margin: 0 auto;
     .campaign {}
-    .campaign1 {width: 1440px; position: relative; height:720px;
+    .campaign1 {width: 1440px; position: relative; margin-top: 100px;
         video {width:100%;}
-        .bg_1 {width:1000%; background: #f48238; height:100%; position: absolute; top:0; z-index: -1; left: -1000px;}
+        .bg_1 {width:1000%; background: #f48238; height:720px; position: absolute; top:0; z-index: -1; left: -1000px;}
     }
     .campaign2 {text-align: center; height: 260px; background: #502416;
         p { padding-top: 40px;font-family: jua; font-size: 2.25rem; line-height: 2.0; color:#f48238;
