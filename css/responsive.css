@@ -1,0 +1,4 @@
+@media screen and (max-width:1300px) {
+    header, main, footer {width: auto;}
+    main .visual video {height:100%; width:auto;}
+}

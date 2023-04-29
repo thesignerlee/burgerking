@@ -19,15 +19,14 @@ header {
   padding: 0 30px;
   top: 0;
 }
-header nav {
-  display: flex;
-}
 header nav > ul {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 header nav > ul > li {
-  margin-left: 45px;
+  position: relative;
+  padding-right: 80px;
 }
 header nav > ul > li > a {
   font-size: 1.25rem;
@@ -37,16 +36,49 @@ header nav > ul > li > a {
 header nav > ul > li > a img {
   width: 12px;
   height: 12px;
-  display: inline-block;
   transform: translate(5px, 2px);
 }
-header nav > ul > li .sub {
-  display: none;
+header nav > ul > li > .sub {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  height: 300px;
 }
-header nav > ul li:first-child {
-  margin: 0;
+header nav > ul > li > .sub > li {
+  margin-top: 16px;
+  padding-bottom: 8px;
 }
-header nav > ul li:nth-child(5) a {
+header nav > ul > li > .sub > li > a {
+  font-weight: 600;
+  height: 16px;
+}
+header nav > ul > li > .sub li:hover {
+  border-bottom: dashed 1px #222;
+  padding-bottom: 7px;
+}
+header nav > ul > li:nth-child(1):hover > a {
+  color: #ee3224;
+}
+header nav > ul > li:nth-child(2):hover > a {
+  color: #ee3224;
+}
+header nav > ul > li:nth-child(3):hover > a {
+  color: #ee3224;
+}
+header nav > ul > li:nth-child(4):hover > a {
+  color: #ee3224;
+}
+header nav > .bg_nav {
+  width: 1000%;
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: -1000px;
+}
+header > .subsub a:nth-child(1) {
   font-size: 1rem;
   color: #fff;
   width: 115px;
@@ -55,8 +87,10 @@ header nav > ul li:nth-child(5) a {
   background: #502416;
   display: inline-block;
   text-align: center;
+  margin-left: -320px;
+  font-family: jua;
 }
-header nav > ul li:nth-child(6) a {
+header > .subsub a:nth-child(2) {
   font-size: 1rem;
   color: #fff;
   width: 115px;
@@ -65,8 +99,10 @@ header nav > ul li:nth-child(6) a {
   background: #ee3224;
   display: inline-block;
   text-align: center;
+  margin: 0 5px;
+  font-family: jua;
 }
-header nav > ul li:nth-child(7) a {
+header > .subsub a:nth-child(3) {
   font-size: 1rem;
   color: #fff;
   width: 115px;
@@ -75,13 +111,14 @@ header nav > ul li:nth-child(7) a {
   background: #f48238;
   display: inline-block;
   text-align: center;
+  font-family: jua;
 }
 header .bg_h {
   width: 1000%;
   background: #fff;
-  height: 100%;
+  height: 300px;
   position: absolute;
-  top: 0;
+  top: 100px;
   z-index: -1;
   left: -1000px;
 }
@@ -101,7 +138,7 @@ main .campaign1 video {
 main .campaign1 .bg_1 {
   width: 1000%;
   background: #f48238;
-  height: 720px;
+  height: 810px;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -111,6 +148,7 @@ main .campaign2 {
   text-align: center;
   height: 260px;
   background: #502416;
+  margin-top: -2px;
 }
 main .campaign2 p {
   padding-top: 40px;
@@ -148,6 +186,38 @@ main .campaign3 {
   justify-content: space-between;
   align-items: center;
 }
+main .campaign3 p {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  transition: all 0.5s;
+}
+main .campaign3 p a {
+  margin-top: -20px;
+}
+main .campaign3 p a img {
+  transition: all 1s;
+}
+main .campaign3 p a:last-child {
+  transform: translateX(90%);
+  margin-top: 12px;
+  padding-top: 10px;
+  font-family: jua;
+  width: 120px;
+  height: 35px;
+  background: #ee3224;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  display: none;
+  transition: all 1s;
+}
+main .campaign3 p:hover a:last-child {
+  display: block;
+}
+main .campaign3 p:hover img {
+  transform: scale(1.1);
+}
 main .campaign3 .bg_2_1 {
   width: 1000%;
   background: #f2ebe6;
@@ -158,11 +228,12 @@ main .campaign3 .bg_2_1 {
   left: -1000px;
 }
 main .campaign4 {
-  height: 450px;
+  height: 420px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 150px;
+  margin-bottom: -50px;
 }
 main .campaign4 div h1 {
   font-size: 3.75rem;
@@ -170,18 +241,20 @@ main .campaign4 div h1 {
 }
 main .campaign4 div h2 {
   font-size: 1.875rem;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-top: 10px;
+  letter-spacing: -0.02em;
 }
 main .campaign4 .bg_4 {
   display: none;
 }
 main .campaign5 {
-  height: 450px;
+  height: 420px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 150px;
+  margin-top: -50px;
 }
 main .campaign5 div h1 {
   font-size: 3.75rem;
@@ -189,8 +262,9 @@ main .campaign5 div h1 {
 }
 main .campaign5 div h2 {
   font-size: 1.875rem;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-top: 10px;
+  letter-spacing: -0.02em;
 }
 main .campaign5 .bg_4_4 {
   display: none;
@@ -199,8 +273,10 @@ main .campaign6 {
   height: 435px;
   margin-top: 100px;
   text-align: center;
+  margin-top: -20px;
 }
 main .campaign6 h1 a {
+  transition: all 0.5s;
   font-size: 3.75rem;
   font-family: jua;
   width: 380px;
@@ -210,6 +286,11 @@ main .campaign6 h1 a {
   border-radius: 50px;
   line-height: 75px;
   color: #fff;
+  padding-top: 4px;
+}
+main .campaign6 a:hover {
+  color: #ee3224;
+  background: #f48238;
 }
 main .campaign6 h2 {
   font-size: 1.875rem;
@@ -260,6 +341,7 @@ main .campaign7 .platform .youtube > div > p {
   font-family: jua;
   margin-left: 15px;
   text-align: center;
+  margin-bottom: 8px;
 }
 main .campaign7 .platform .youtube > div .subs {
   display: flex;
@@ -270,16 +352,25 @@ main .campaign7 .platform .youtube > div .subs {
   height: 40px;
   background: #fff;
   border-radius: 10px;
+  margin-top: 8px;
+  transition: all 0.5s;
 }
 main .campaign7 .platform .youtube > div .subs img {
   width: 24px;
   height: 16px;
   margin-right: 5px;
 }
-main .campaign7 .platform .youtube > div .subs p {
+main .campaign7 .platform .youtube > div .subs a {
+  font-family: jua;
   text-align: center;
   line-height: 40px;
   margin-left: 5px;
+}
+main .campaign7 .platform .youtube > div .subs:hover {
+  background: #ee3224;
+}
+main .campaign7 .platform .youtube > div .subs:hover a {
+  color: #fff;
 }
 main .campaign7 .platform .facebook {
   display: flex;
@@ -290,6 +381,7 @@ main .campaign7 .platform .facebook > div > p {
   font-family: jua;
   margin-left: 15px;
   text-align: center;
+  margin-bottom: 8px;
 }
 main .campaign7 .platform .facebook > div .subs {
   display: flex;
@@ -300,16 +392,25 @@ main .campaign7 .platform .facebook > div .subs {
   height: 40px;
   background: #fff;
   border-radius: 10px;
+  margin-top: 8px;
+  transition: all 0.5s;
 }
 main .campaign7 .platform .facebook > div .subs img {
   width: 16px;
   height: 16px;
   margin-right: 5px;
 }
-main .campaign7 .platform .facebook > div .subs p {
+main .campaign7 .platform .facebook > div .subs a {
+  font-family: jua;
   text-align: center;
   line-height: 40px;
   margin-left: 5px;
+}
+main .campaign7 .platform .facebook > div .subs:hover {
+  background: #ee3224;
+}
+main .campaign7 .platform .facebook > div .subs:hover a {
+  color: #fff;
 }
 main .campaign7 .platform .instagram {
   display: flex;
@@ -320,6 +421,7 @@ main .campaign7 .platform .instagram > div > p {
   margin-left: 15px;
   font-family: jua;
   text-align: center;
+  margin-bottom: 8px;
 }
 main .campaign7 .platform .instagram > div .subs {
   display: flex;
@@ -330,28 +432,41 @@ main .campaign7 .platform .instagram > div .subs {
   height: 40px;
   background: #fff;
   border-radius: 10px;
+  margin-top: 8px;
+  transition: all 0.5s;
 }
 main .campaign7 .platform .instagram > div .subs img {
   width: 16px;
   height: 16px;
   margin-right: 5px;
 }
-main .campaign7 .platform .instagram > div .subs p {
+main .campaign7 .platform .instagram > div .subs a {
+  font-family: jua;
   text-align: center;
   line-height: 40px;
   margin-left: 5px;
+}
+main .campaign7 .platform .instagram > div .subs:hover {
+  background: #ee3224;
+}
+main .campaign7 .platform .instagram > div .subs:hover a {
+  color: #fff;
 }
 main .campaign7 .bg_7 {
   display: none;
 }
 main .campaign8 {
-  height: 480px;
+  margin-bottom: 100px;
   position: relative;
+}
+main .campaign8 .swiper .swiper-button-next:after, main .campaign8 .swiper .swiper-button-prev:after {
+  content: "next";
+  display: none;
 }
 main .campaign8 .bg_8 {
   width: 1000%;
   background: #f48238;
-  height: 100%;
+  height: 121%;
   position: absolute;
   top: 0;
   z-index: -1;
@@ -361,4 +476,69 @@ main .campaign8 .bg_8 {
 footer {
   width: 1440px;
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+footer .left {
+  padding: 20px 0;
+}
+footer .left .l_t h1 {
+  font-size: 1.875rem;
+  font-family: jua;
+  color: #fff;
+  line-height: 2;
+}
+footer .left .l_t p {
+  color: #fff;
+  line-height: 1.5;
+}
+footer .left .l_m {
+  margin-top: 30px;
+}
+footer .left .l_m a img {
+  width: 24px;
+  height: 24px;
+}
+footer .left .l_m a:nth-child(2) {
+  margin: 0 5px;
+}
+footer .left .l_m a:last-child img {
+  transform: translateY(7px);
+  width: 36px;
+  height: 36px;
+}
+footer .right {
+  padding: 35px 0;
+}
+footer .right .r_t {
+  text-align: center;
+}
+footer .right .r_t a {
+  color: #fff;
+  font-family: jua;
+}
+footer .right .r_t a:nth-child(2) {
+  margin: 0 45px;
+}
+footer .right .r_f {
+  margin-top: 20px;
+  text-align: center;
+}
+footer .right .r_f a {
+  color: #fff;
+  border: 2px #fff solid;
+  border-radius: 25px;
+  font-family: jua;
+  padding: 5px 30px;
+  display: inline;
+}
+footer .bg_f {
+  width: 1000%;
+  background: #502416;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: -1000px;
 }/*# sourceMappingURL=main.css.map */
