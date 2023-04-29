@@ -19,57 +19,70 @@ header {
   padding: 0 30px;
   top: 0;
 }
-header nav > ul {
+header .ham {
+  display: none;
+}
+header .ham a {
+  display: block;
+}
+header .ham a span {
+  width: 36px;
+  height: 6px;
+  background: #222;
+  display: block;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+header .ham a:nth-child(2) {
+  margin: 3px 0;
+}
+header .h_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .h_right nav > ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-header nav > ul > li {
+header .h_right nav > ul > li {
   position: relative;
   padding-right: 80px;
 }
-header nav > ul > li > a {
+header .h_right nav > ul > li > a {
   font-size: 1.25rem;
   font-family: jua;
   display: flex;
 }
-header nav > ul > li > a img {
+header .h_right nav > ul > li > a img {
   width: 12px;
   height: 12px;
   transform: translate(5px, 2px);
 }
-header nav > ul > li > .sub {
+header .h_right nav > ul > li > .sub {
   position: absolute;
   left: 0;
   top: 60px;
   width: 100%;
   height: 300px;
 }
-header nav > ul > li > .sub > li {
+header .h_right nav > ul > li > .sub > li {
   margin-top: 16px;
   padding-bottom: 8px;
 }
-header nav > ul > li > .sub > li > a {
+header .h_right nav > ul > li > .sub > li > a {
   font-weight: 600;
   height: 16px;
 }
-header nav > ul > li > .sub li:hover {
+header .h_right nav > ul > li > .sub li:hover {
   border-bottom: dashed 1px #222;
   padding-bottom: 7px;
 }
-header nav > ul > li:nth-child(1):hover > a {
+header .h_right nav > ul > li:hover > a {
   color: #ee3224;
 }
-header nav > ul > li:nth-child(2):hover > a {
-  color: #ee3224;
-}
-header nav > ul > li:nth-child(3):hover > a {
-  color: #ee3224;
-}
-header nav > ul > li:nth-child(4):hover > a {
-  color: #ee3224;
-}
-header nav > .bg_nav {
+header .h_right nav > .bg_nav {
   width: 1000%;
   background: #fff;
   height: 100%;
@@ -78,40 +91,24 @@ header nav > .bg_nav {
   z-index: -1;
   left: -1000px;
 }
-header > .subsub a:nth-child(1) {
+header .h_right > .subsub a {
   font-size: 1rem;
   color: #fff;
   width: 115px;
   line-height: 36px;
   border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+  font-family: jua;
+}
+header .h_right > .subsub a:nth-child(1) {
   background: #502416;
-  display: inline-block;
-  text-align: center;
-  margin-left: -320px;
-  font-family: jua;
 }
-header > .subsub a:nth-child(2) {
-  font-size: 1rem;
-  color: #fff;
-  width: 115px;
-  line-height: 36px;
-  border-radius: 25px;
+header .h_right > .subsub a:nth-child(2) {
   background: #ee3224;
-  display: inline-block;
-  text-align: center;
-  margin: 0 5px;
-  font-family: jua;
 }
-header > .subsub a:nth-child(3) {
-  font-size: 1rem;
-  color: #fff;
-  width: 115px;
-  line-height: 36px;
-  border-radius: 25px;
+header .h_right > .subsub a:nth-child(3) {
   background: #f48238;
-  display: inline-block;
-  text-align: center;
-  font-family: jua;
 }
 header .bg_h {
   width: 1000%;
@@ -127,8 +124,11 @@ main {
   width: 1440px;
   margin: 0 auto;
 }
+main .campaign {
+  width: 100%;
+}
 main .campaign1 {
-  width: 1440px;
+  width: 100%;
   position: relative;
   margin-top: 100px;
 }
@@ -146,9 +146,11 @@ main .campaign1 .bg_1 {
 }
 main .campaign2 {
   text-align: center;
+  width: 100%;
   height: 260px;
   background: #502416;
   margin-top: -2px;
+  position: relative;
 }
 main .campaign2 p {
   padding-top: 40px;
@@ -177,7 +179,9 @@ main .campaign2 h2 {
   font-family: jua;
   text-align: end;
   color: #fff;
-  transform: translate(-20px, 40px);
+  position: absolute;
+  right: 1%;
+  bottom: 5%;
 }
 main .campaign3 {
   height: 350px;
@@ -303,7 +307,7 @@ main .campaign6 > .store {
 main .campaign6 > .store > div {
   display: flex;
   flex-flow: column wrap;
-  margin-left: 100px;
+  padding: 0 50px;
   margin-top: 50px;
 }
 main .campaign6 > .store > div span {
@@ -311,25 +315,23 @@ main .campaign6 > .store > div span {
   font-family: jua;
   font-size: 1.4rem;
 }
-main .campaign6 > .store div:first-child {
-  margin-left: 0;
-}
 main .campaign6 .bg_6 {
   display: none;
 }
 main .campaign7 {
   height: 355px;
   background: #502416;
-  padding: 70px 300px;
+  padding-top: 20px;
 }
 main .campaign7 h2 {
   text-align: center;
   color: #f2ebe6;
   font-size: 1.45rem;
+  margin-top: 60px;
 }
 main .campaign7 .platform {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 60px;
 }
 main .campaign7 .platform .youtube {
@@ -375,6 +377,7 @@ main .campaign7 .platform .youtube > div .subs:hover a {
 main .campaign7 .platform .facebook {
   display: flex;
   align-items: center;
+  margin: 0 40px;
 }
 main .campaign7 .platform .facebook > div > p {
   color: #fff;
@@ -458,6 +461,12 @@ main .campaign7 .bg_7 {
 main .campaign8 {
   margin-bottom: 100px;
   position: relative;
+}
+main .campaign8 .swiper {
+  width: 100%;
+}
+main .campaign8 .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
 }
 main .campaign8 .swiper .swiper-button-next:after, main .campaign8 .swiper .swiper-button-prev:after {
   content: "next";

@@ -8,73 +8,64 @@ header {
     align-items: center;
     padding: 0 30px;
     top:0;
-    h1 {
-        a {
-            img {}
-        }
-    }
-    nav {
-        > ul {display: flex;
-            align-items: center;
-            justify-content: space-between;
-            > li {
-                position: relative; padding-right: 80px;
-                > a {font-size: 1.25rem; font-family: jua; display: flex;
-                    img {width:12px; height:12px; transform: translate(5px, 2px);}
-                }
-                >.sub {position: absolute; left: 0; top:60px; width:100%; height:300px;
-                    > li {margin-top: 16px;  padding-bottom: 8px;
-                        > a {font-weight: 600; height: 16px;}
+    h1 {a {img {}}}
+    .ham {
+        a{ display: block;
+            span {
+            width:36px; height: 6px; background: #222; display: block; border-radius: 25px; transition: all 0.5s;
+        }}
+        a:nth-child(2){margin: 3px 0;}
+        display: none;}
+    .h_right{ display: flex; justify-content: space-between; align-items: center;
+        nav {
+            > ul {display: flex;
+                align-items: center;
+                justify-content: space-between;
+                > li {
+                    position: relative; padding-right: 80px;
+                    > a {font-size: 1.25rem; font-family: jua; display: flex;
+                        img {width:12px; height:12px; transform: translate(5px, 2px);}
                     }
-                    li:hover  {border-bottom: dashed 1px #222; padding-bottom: 7px;}
+                    >.sub {position: absolute; left: 0; top:60px; width:100%; height:300px;
+                        > li {margin-top: 16px;  padding-bottom: 8px;
+                            > a {font-weight: 600; height: 16px;}
+                        }
+                        li:hover  {border-bottom: dashed 1px #222; padding-bottom: 7px;}
+                    }
                 }
+                > li:hover > a {color:#ee3224;}
             }
-            > li:nth-child(1):hover > a{
-                color:#ee3224;
-            }
-            > li:nth-child(2):hover > a{
-                color:#ee3224;
-            }
-            > li:nth-child(3):hover > a{
-                color:#ee3224;
-            }
-            > li:nth-child(4):hover > a{
-                color:#ee3224;
-            }
+            > .bg_nav {width:1000%; background: #fff; height:100%; position: absolute; top:0; z-index: -1; left: -1000px;}
         }
-        > .bg_nav {width:1000%; background: #fff; height:100%; position: absolute; top:0; z-index: -1; left: -1000px;}
-    }
-    > .subsub {
-        a:nth-child(1) {
-            font-size: 1rem; color: #fff; width:115px; line-height: 36px; border-radius: 25px; background: #502416; display: inline-block; text-align: center; margin-left: -320px; font-family: jua;
-        }
-        a:nth-child(2) {
-            font-size: 1rem; color: #fff; width:115px; line-height: 36px; border-radius: 25px; background: #ee3224; display: inline-block; text-align: center; margin:0 5px; font-family: jua;
-        }
-        a:nth-child(3) {
-            font-size: 1rem; color: #fff; width:115px; line-height: 36px; border-radius: 25px; background: #f48238; display: inline-block; text-align: center; font-family: jua;
+        > .subsub {
+            a {
+                font-size: 1rem; color: #fff; width:115px; line-height: 36px; border-radius: 25px; 
+                display: inline-block; text-align: center; font-family: jua;
+            }
+            a:nth-child(1) {background: #502416;}
+            a:nth-child(2) {background: #ee3224;}
+            a:nth-child(3) {background: #f48238;}
         }
     }
     .bg_h {
-
         width:1000%; background: #fff; height:300px; position: absolute; top:100px; z-index: -1; left: -1000px;}
 }
 // header:e
 main {
     width:1440px; margin: 0 auto;
-    .campaign {}
-    .campaign1 {width: 1440px; position: relative; margin-top: 100px; 
+    .campaign {width:100%;}
+    .campaign1 {width: 100%; position: relative; margin-top: 100px; 
         video {width:100%;}
         .bg_1 {width:1000%; background: #f48238; height:810px; position: absolute; top:0; z-index: -1; left: -1000px;}
     }
-    .campaign2 {text-align: center; height: 260px; background: #502416; margin-top: -2px; 
+    .campaign2 {text-align: center;  width: 100%; height: 260px; background: #502416; margin-top: -2px; position: relative;
         p { padding-top: 40px;font-family: jua; font-size: 2.25rem; line-height: 2.0; color:#f48238;
             span {font-size: 2.25rem; font-family: jua; color:#ee3224;}
         }
         h1 {font-size: 4.5rem;font-family: jua; color:#f48238;
             span {font-size: 4.5rem;font-family: jua; color:#ee3224;}
         }
-        h2 {font-size: 1.5rem; font-family: jua; text-align: end; color:#fff; transform: translate(-20px,40px);}
+        h2 {font-size: 1.5rem; font-family: jua; text-align: end; color:#fff; position: absolute; right: 1%; bottom: 5%;}
         .bg_2 {}
     }
     .campaign3 {height: 350px; position: relative; display: flex; justify-content: space-between; align-items: center;
@@ -125,18 +116,18 @@ main {
         a:hover {color: #ee3224; background: #f48238;}
         h2 { font-size: 1.875rem; margin-top: 30px;}
         > .store { display: flex; justify-content: center;
-            > div { display: flex; flex-flow: column wrap; margin-left: 100px; margin-top: 50px;
+            > div { display: flex; flex-flow: column wrap; padding: 0 50px; margin-top: 50px;
                 img {
                 }
                 span {margin-top: 30px; font-family: jua; font-size: 1.4rem;}
             }
-            div:first-child {margin-left: 0;}
+            div:first-child {}
         }
         .bg_6 {display: none;}
     }
-    .campaign7 {height: 355px; background: #502416; padding: 70px 300px;
-        h2 {text-align: center; color: #f2ebe6; font-size: 1.45rem;}
-        .platform {display: flex; justify-content: space-between; margin-top: 60px;
+    .campaign7 {height: 355px; background: #502416; padding-top: 20px;
+        h2 {text-align: center; color: #f2ebe6; font-size: 1.45rem; margin-top: 60px;}
+        .platform {display: flex; justify-content: center; margin-top: 60px;
             .youtube { display: flex; align-items: center; 
                 img {}
                 > div {
@@ -151,7 +142,7 @@ main {
                     .subs:hover a {color:#fff;}
                 }
             }
-            .facebook {display: flex; align-items: center;
+            .facebook {display: flex; align-items: center; margin:  0 40px;
                 img {}
                 > div {
                     > p {color: #fff; font-family: jua; margin-left: 15px; text-align: center; margin-bottom: 8px;
@@ -183,10 +174,10 @@ main {
         .bg_7 {display: none;}
     }
     .campaign8 {margin-bottom: 100px; position: relative;
-        .swiper {
+        .swiper {width:100%;
             .swiper-wrapper {
                 .swiper-slide {
-                    img {}
+                    img {width:100%;}
                 }
                 .slide1 {}
                 .slide2 {}
