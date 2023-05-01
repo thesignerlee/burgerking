@@ -82,10 +82,3 @@ for(let i of m_nav_a){
         }
     })
 }
-
-const all = document.querySelectorAll('* a')
-for(let i of all){
-    i.addEventListener('click',(e)=>{
-        e.preventDefault()
-    })
-}

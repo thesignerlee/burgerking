@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 body {overflow-x: hidden;}
+.fix {
+    z-index: 999; width:52px; height: 52px;
+    position:fixed; right: 5%; bottom: 5%;
+    background: url(../images/up.png) no-repeat;
+    background-size: cover;
+}
 header {
-    position: fixed; z-index: 999; height:100px; background: #fff; left:50%; transform: translateX(-50%);
+    position: fixed; z-index: 990; height:100px; background: #fff; left:50%; transform: translateX(-50%);
     width:1440px; height:100px; margin: 0 auto;
     display: flex;
     justify-content: space-between;
