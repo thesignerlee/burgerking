@@ -3,43 +3,41 @@
     header {width:100%;}
     main {width:100%;}
     footer {width: 100%;}
-    
+    .nav_m {display: none;}
 
 }/*1440*/
-@media screen and (max-width:1330px) {
+@media screen and (max-width:1024px) {
     
-    .campaign3 p:nth-child(4) a{display: none;}
-}/*1330*/
-@media screen and (max-width:1200px) {
-    
-    header nav > ul > li > a {white-space: nowrap;}
-    header nav {display:none;}
-    header .ham {display: block;}
-    .campaign1 video {width: auto; height: 100%;}
-
-}
-/*1200*/
-@media screen and (max-width:1118px) {
-    
-.campaign4 div h1, .campaign5 div h1 {font-size: 2.6rem !important;}
-.campaign4 div h2, .campaign5 div h2 {font-size: 1.3rem !important;}
 .campaign6 .store div:nth-child(1) {display: none;}
+header nav > ul > li > a {white-space: nowrap;}
+.campaign3 p:nth-child(4) a{display: none;}
+header nav {display:none;}
+header .h_right .subsub .hamburger {display: inline-block; }
+header .h_right .nav_m {
+    position: absolute;
+    top: 100px;
+    left: 40px;
 }
-/*1118*/
-@media screen and (max-width:1000px) {
-    
-    .campaign3 p:nth-child(1) a{display: none;}
-    .campaign6 .store div:nth-child(6) {display: none;}
-    .campaign7 h2 {display: none;}
-    .campaign7 .platform {margin-top: 140px !important;}
-    .campaign7 .platform .instagram{display: none !important;}
-    footer .left p {display:none;}
+header .h_right .nav_m > ul > li {margin-bottom: 5px;}
+header .h_right .nav_m > ul > li:first-child {margin-top: 10px;}
+header .h_right .nav_m > ul > li:last-child {margin-bottom: 0}
+header .h_right .nav_m > ul > li > .sub {}
+.campaign1 video {width: auto; height: 100%;}
+.campaign3 p:nth-child(1) a{display: none;}
+.campaign6 .store div:nth-child(6) {display: none;}
+.campaign4 div {margin-right:10px;}
+.campaign4 img {margin-left: 10px;}
+.campaign5 div {margin-left: 10px;}
+.campaign5 div h1 span:first-child{white-space: nowrap;}
+.campaign5 img {margin-right:10px;}
+.campaign7 .platform .instagram{display: none !important;}
+footer .left p {display:none;}
 }
-/*1000*/
-@media screen and (max-width:800px) {
-    
+/*1024*/
+@media screen and (max-width:864px) {
+    .campaign4 div h1 span, .campaign5 div h1 span {font-size: 2.6rem !important;}
+    .campaign4 div h2, .campaign5 div h2 {font-size: 1.3rem !important;}
     .campaign6 .store div:nth-child(2) {display: none;}
-    .campaign7 .platform .youtube{display: none !important;}
     
 
 }
@@ -56,8 +54,3 @@
     .campaign6 .store div:nth-child(4) {display: none;}
 }
 /*600*/
-@media screen and (max-width:400px) {
-    
-    .campaign6 .store div:nth-child(3) {display: none;}
-}
-/*400*/
