@@ -1,1 +1,220 @@
-/*# sourceMappingURL=new.css.map */
+.active {
+  color: #ee3224;
+  border-bottom: 3px solid #ee3224;
+  padding-bottom: 2px;
+}
+
+.fix {
+  z-index: 999;
+  width: 52px;
+  height: 52px;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  background: url(../images/up.png) no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 1440px;
+  margin: 0 auto;
+}
+main .introduce {
+  width: 1440px;
+  height: 230px;
+  background: url(../images_main/bg_f.jpg) no-repeat;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-flow: column wrap;
+}
+main .introduce > h1 {
+  font-size: 3rem;
+  font-family: jua;
+  color: #fff;
+  padding: 0 30px;
+  padding-top: 30px;
+}
+main .introduce span {
+  line-height: 2;
+  color: #fff;
+  padding: 0 30px;
+}
+main .introduce .nav {
+  padding: 0 30px;
+}
+main .introduce .nav a {
+  color: #fff;
+  line-height: 3;
+  padding-bottom: 1px;
+  display: inline;
+}
+main .introduce .nav a:nth-child(2) {
+  margin: 0 20px;
+}
+main .introduce .nav a::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #ee3224;
+  border-radius: 100%;
+  display: inline-block;
+  transform: translate(13px, -3px);
+}
+main .introduce .nav a:last-child::after {
+  display: none;
+}
+main .introduce .nav a:hover {
+  border-bottom: 1px dashed #fff;
+  padding-bottom: 1px;
+  color: #ee3224;
+}
+main > h1 {
+  padding: 0 30px;
+  font-size: 3rem;
+  font-family: jua;
+  margin-top: 100px;
+}
+main .title {
+  text-align: center;
+  margin-top: 100px;
+  font-family: jua;
+  font-size: 1.45rem;
+}
+main .title a {
+  margin: 30px;
+  transition: all 0.1s;
+}
+main .new_menu {
+  width: 100%;
+  margin: 0 auto;
+}
+main .new_menu .menu .group1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 100%;
+}
+main .new_menu .menu .group1 .hamburger {
+  border: 1px solid #f8f8f8;
+  border-radius: 10px;
+}
+main .new_menu .menu .group1 .hamburger a {
+  width: 100%;
+  border: 1px solid #f8f8f8;
+  background: #f8f8f8;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  transition: all 0.5s;
+}
+main .new_menu .menu .group1 .hamburger a img {
+  width: 100%;
+  transition: all 0.5s;
+}
+main .new_menu .menu .group1 .hamburger a img:hover {
+  transform: scale(1.1);
+}
+main .new_menu .menu .group1 .hamburger a span {
+  text-align: center;
+  font-size: 1.2;
+  font-family: jua;
+  padding: 10px 0;
+}
+main .new_menu .menu .group1 .hamburger a span:last-child {
+  margin-bottom: 40px;
+  color: #ccc;
+}
+main .new_menu .menu .group1 .hamburger:hover a {
+  border: 1px solid #ee3224;
+  transform: scale(1.2);
+  background: #ee3224;
+}
+main .new_menu .menu .group1 .hamburger:hover p {
+  transform: scale(1.2);
+}
+main .new_menu .menu .group2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+}
+main .new_menu .menu .group2 .hamburger {
+  display: flex;
+  border: 1px solid #f8f8f8;
+  border-radius: 10px;
+}
+main .new_menu .menu .group2 .hamburger a {
+  width: 100%;
+  border: 1px solid #f8f8f8;
+  background: #f8f8f8;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  transition: all 0.5s;
+}
+main .new_menu .menu .group2 .hamburger a img {
+  width: 100%;
+  transition: all 0.5s;
+}
+main .new_menu .menu .group2 .hamburger a img:hover {
+  transform: scale(1.1);
+}
+main .new_menu .menu .group2 .hamburger a span {
+  text-align: center;
+  font-size: 1.2;
+  font-family: jua;
+  padding: 10px 0;
+}
+main .new_menu .menu .group2 .hamburger a span:last-child {
+  margin-bottom: 40px;
+  color: #ccc;
+}
+main .new_menu .menu .group2 .hamburger:hover a {
+  border: 1px solid #ee3224;
+  transform: scale(1.2);
+  background: #ee3224;
+}
+main .new_menu .menu .group2 .hamburger:hover p {
+  transform: scale(1.2);
+}
+main .new_menu .menu .group3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+main .new_menu .menu .group3 .hamburger {
+  display: flex;
+  border: 1px solid #f8f8f8;
+  border-radius: 10px;
+}
+main .new_menu .menu .group3 .hamburger a {
+  border: 1px solid #f8f8f8;
+  background: #f8f8f8;
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column wrap;
+  transition: all 0.5s;
+}
+main .new_menu .menu .group3 .hamburger a img {
+  width: 100%;
+  transition: all 0.5s;
+}
+main .new_menu .menu .group3 .hamburger a img:hover {
+  transform: scale(1.1);
+}
+main .new_menu .menu .group3 .hamburger a span {
+  text-align: center;
+  font-size: 1.2;
+  font-family: jua;
+  padding: 10px 0;
+}
+main .new_menu .menu .group3 .hamburger a span:last-child {
+  margin-bottom: 40px;
+  color: #ccc;
+}
+main .new_menu .menu .group3 .hamburger:hover a {
+  border: 1px solid #ee3224;
+  transform: scale(1.2);
+  background: #ee3224;
+}/*# sourceMappingURL=new.css.map */

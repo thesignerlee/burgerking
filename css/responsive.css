@@ -1,13 +1,16 @@
 @media screen and (max-width:1440px) {
-    
+    /* 메인페이지 */
     header {width:100%;}
     main {width:100%;}
     footer {width: 100%;}
     .nav_m {display: none;}
+    /* 서브페이지1 */
+    main .introduce {width:100%; height: auto;}
+    main > h1 {width: 100%;}
 
 }/*1440*/
 @media screen and (max-width:1024px) {
-    
+    /* 메인페이지 */
 .campaign6 .store div:nth-child(1) {display: none;}
 header nav > ul > li > a {white-space: nowrap;}
 .campaign3 p:nth-child(4) a{display: none;}
@@ -32,25 +35,36 @@ header .h_right .nav_m > ul > li > .sub {}
 .campaign5 img {margin-right:10px;}
 .campaign7 .platform .instagram{display: none !important;}
 footer .left p {display:none;}
+/* 서브페이지1 */
+main .new_menu .menu .group .hamburger a {width:80%; margin-left: 10%;}
 }
+
 /*1024*/
+/* 메인페이지 */
 @media screen and (max-width:864px) {
     .campaign4 div h1 span, .campaign5 div h1 span {font-size: 2.6rem !important;}
     .campaign4 div h2, .campaign5 div h2 {font-size: 1.3rem !important;}
     .campaign6 .store div:nth-child(2) {display: none;}
     
+/* 서브페이지1 */
 
 }
 /*800*/
+/* 메인페이지 */
 @media screen and (max-width:684px) {
     
     .campaign3 p:nth-child(2) a{display: none;}
 
 }
+/* 서브페이지1 */
+
 /*684*/
+/* 메인페이지 */
 @media screen and (max-width:600px) {
     
 
     .campaign6 .store div:nth-child(4) {display: none;}
 }
+/* 서브페이지1 */
+
 /*600*/

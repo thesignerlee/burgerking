@@ -6,9 +6,10 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEW</title>
+    <title>메뉴정보 | 신제품(NEW)</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/new.css">
+    <link rel="stylesheet" href="./css/responsive.css">
         <!-- 파비콘 -->
         <link rel="shortcut icon" href="./images/pavicon.png" type="image/x-icon">
         <link rel="icon" href="./images/pavicon.png" type="/x-icon">
@@ -19,15 +20,16 @@
         <script src="./scripts/jquery-3.6.0.js"></script>
 </head>
 <body>
+    <a class="fix" href="#"></a>
     <!-- 처음 -->
     <main>
         <!-- 네비 -->
         <div class="introduce">
             <h1>신제품(NEW)</h1>
-            <span>버거킹만의 특색 있는 </span>
-            <span>신메뉴를 소개합니다</span>
+            <span>풍부한 그릴향과 압도적인 크기 </span>
+            <span>버거킹만의 특색 있는 신메뉴를 소개합니다</span>
             <div class="nav">
-                <a href="#">HOME</a>
+                <a href="./index.html">HOME</a>
                 <a href="#">메뉴소개</a>
                 <a href="#">신제품(NEW)</a>
             </div>
@@ -36,70 +38,83 @@
         <h1>메뉴소개</h1>
         <!-- 세트메뉴 -->
         <div class="title">
-            <a href="#">단품메뉴</a>
+            <a href="#" class="active">단품메뉴</a>
             <a href="#">세트메뉴</a>
         </div>
         <div class="new_menu">
-            <div class="danpoom">
-                <div class="quatro4">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
+            <div class="menu danpoom">
+                <div class="group1 group">
+                    <div class="quatro4 hamburger">
+                        <a href="./detail.html"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span><span>Quatro Maximum... 4</span></a>
+                    </div>
+                    <div class="quatro3 hamburger">
+                        <a href="#"><img src="./images_main/q_3_d.png" alt=""><span>콰트로 맥시멈...이하생략3</span><span>Quatro Maximum... 3</span></a>
+                    </div>
+                    <div class="smoky_mon hamburger">
+                        <a href="#"><img src="./images_main/b_m_d.png" alt=""><span>스모키 바비큐 몬스터</span><span>Smoke Barbecue Monster</span></a>
+                    </div>
                 </div>
-                <div class="quatro3">
-                    <a href="#"><img src="./images_main/q_3_d.png" alt=""><span>콰트로 맥시멈...이하생략3</span></a>
+                <div class="group2 group">
+                    <div class="smoky_whopper hamburger">
+                        <a href="#"><img src="./images_main/s_bw_d.png" alt=""><span>스모키 바비큐 와퍼</span><span>Smoke Barbecue Whopper</span></a>
+                    </div>
+                    <div class="smoky_x hamburger">
+                        <a href="#"><img src="./images_main/s_m_x.png" alt=""><span>스모키 바비큐 X</span><span>Smoke Barbecue X</span></a>
+                    </div>
+                    <div class="chi_blt hamburger">
+                        <a href="#"><img src="./images_main/chi_bl_d.png" alt=""><span>치킨킹BLT</span><span>Chicken King BLT</span></a>
+                    </div>
                 </div>
-                <div class="smoky_mon">
-                    <a href="#"><img src="./images_main/b_m_d.png" alt=""><span>스모키 바비큐 몬스터</span></a>
-                </div>
-                <div class="smoky_whopper">
-                    <a href="#"><img src="./images_main/s_bw_d.png" alt=""><span>스모키 바비큐 와퍼</span></a>
-                </div>
-                <div class="smoky_x">
-                    <a href="#"><img src="./images_main/s_m_x.png" alt=""><span>스모키 바비큐 X</span></a>
-                </div>
-                <div class="chi_blt">
-                    <a href="#"><img src="./images_main/chi_bl_d.png" alt=""><span>치킨킹BLT</span></a>
-                </div>
-                <div class="chi_k">
-                    <a href="#"><img src="./images_main/chi_k_d.png" alt=""><span>치킨킹</span></a>
-                </div>
-                <div class="blt_oml">
-                    <a href="#"><img src="./images_main/blt_o_d.png" alt=""><span>BLT오믈렛킹모닝</span></a>
-                </div>
-                <div class="oml_k">
-                    <a href="#"><img src="./images_main/o_k_d.png" alt=""><span>오믈렛킹모닝</span></a>
+                <div class="group3 group">
+                    <div class="chi_k hamburger">
+                        <a href="#"><img src="./images_main/chi_k_d.png" alt=""><span>치킨킹</span><span>Chicken King</span></a>
+                    </div>
+                    <div class="blt_oml hamburger">
+                        <a href="#"><img src="./images_main/blt_o_d.png" alt=""><span>BLT오믈렛킹모닝</span><span>BLT Omelet King Morning</span></a>
+                    </div>
+                    <div class="oml_k hamburger">
+                        <a href="#"><img src="./images_main/o_k_d.png" alt=""><span>오믈렛킹모닝</span><span>Omelet King Morning</span></a>
+                    </div>
                 </div>
             </div>
-            <div class="set">
-                <div class="quatro4">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
+            <div class="menu set">
+                <div class="group1 group">
+                    <div class="quatro4 hamburger">
+                        <a href="#"><img src="./images_main/q_4_s.png" alt=""><span>콰트로 맥시멈...이하생략4</span><span>Quatro Maximum... 4 Set</span></a>
+                    </div>
+                    <div class="quatro3 hamburger">
+                        <a href="#"><img src="./images_main/q_3_s.png" alt=""><span>콰트로 맥시멈...이하생략3</span><span>Quatro Maximum... 3 Set</span></a>
+                    </div>
+                    <div class="smoky_mon hamburger">
+                        <a href="#"><img src="./images_main/b_m_s.png" alt=""><span>스모키 바비큐 몬스터</span><span>Smoke Barbecue Monster Set</span></a>
+                    </div>
                 </div>
-                <div class="quatro3">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
+                <div class="group2 group">
+                    <div class="smoky_whopper hamburger">
+                        <a href="#"><img src="./images_main/s_bw_s.png" alt=""><span>스모키 바비큐 와퍼</span><span>Smoke Barbecue Whopper Set</span></a>
+                    </div>
+                    <div class="smoky_x hamburger">
+                        <a href="#"><img src="./images_main/s_m_s.png" alt=""><span>스모키 바비큐 X</span><span>Smoke Barbecue X Set</span></a>
+                    </div>
+                    <div class="chi_blt hamburger">
+                        <a href="#"><img src="./images_main/chi_bl_s.png" alt=""><span>치킨킹BLT</span><span>Chicken King BLT Set</span></a>
+                    </div>
                 </div>
-                <div class="smoky_mon">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
+                <div class="group3 group">
+                    <div class="chi_k hamburger">
+                        <a href="#"><img src="./images_main/chi_k_s.png" alt=""><span>치킨킹</span><span>Chicken King Set</span></a>
+                    </div>
+                    <div class="blt_oml hamburger">
+                        <a href="#"><img src="./images_main/blt_o_s.png" alt=""><span>BLT오믈렛킹모닝</span><span>BLT Omelet King Morning Set</span></a>
+                    </div>
+                    <div class="oml_k hamburger">
+                        <a href="#"><img src="./images_main/o_k_ss.png" alt=""><span>오믈렛킹모닝</span><span>Omelet King Morning Set</span></a>
+                    </div>
                 </div>
-                <div class="smoky_whopper">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
-                </div>
-                <div class="smoky_x">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
-                </div>
-                <div class="chi_blt">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
-                </div>
-                <div class="chi_k">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
-                </div>
-                <div class="blt_oml">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
-                </div>
-                <div class="oml_k">
-                    <a href="#"><img src="./images_main/q_4_d.png" alt=""><span>콰트로 맥시멈...이하생략4</span></a>
-                </div>
-
             </div>
         </div>
     </main>
+
+    <script src="./scripts/new_script.js"></script>
 </body>
 </html>
