@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메뉴정보 | 상세페이지</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/detail.css">
     <link rel="stylesheet" href="./css/responsive.css">
         <!-- 파비콘 -->
@@ -21,6 +22,7 @@
 </head>
 <body>
     <a class="fix" href="#"></a>
+    <?php include("header.php") ?>
     <main>
         <!-- 네비 -->
         <div class="introduce">
@@ -29,8 +31,8 @@
             <span>버거킹만의 특색 있는 신메뉴를 소개합니다</span>
             <div class="nav">
                 <a href="./index.html">HOME</a>
-                <a href="#">메뉴소개</a>
-                <a href="#">신제품(NEW)</a>
+                <a href="./new.html">메뉴소개</a>
+                <a href="./new.html">신제품(NEW)</a>
                 <a href="#">콰트로 멕시멈... 이하생략4</a>
             </div>
         </div>
@@ -40,65 +42,132 @@
                 <span>Quatro Maximum... 4</span>
             </div>
             <div class="picture">
-                <img src="./images_main/new.png" alt="">
-                <img src="./images_main/q_4_d.png" alt="">
+                <img src="./images_main/q_4_d_c.png" alt="">
             </div>
             <div class="describe">
-                <span> 버거킹 콰트로 맥시멈<br>
-                    미트 포커스드 어메이징 얼티밋<br>
-                    그릴드 패티 오브 더 비기스트
-                    <br>포 슈퍼 미트 프릭4</span>
-                <span>100% 순쇠고기 패티 4장에 네 가지 치즈까지 더한<br>
-                    압도적인 녀석이 나타났다</span>
+                <span> "버거킹 콰트로 맥시멈 미트<br>
+                    포커스드 어메이징 얼티밋<br>
+                    그릴드 패티 오브 더
+                    <br>비기스트 포 슈퍼 미트 프릭4"</span>
+                <span>100% 순쇠고기 패티 4장에 네 가지<br>
+                    치즈까지 더한 압도적인 녀석이 나타났다</span>
             </div>
         </div>
         <!-- 정보 -->
-        <div class="ingredient">
-            <h2>영양성분</h2>
-            <table>
-                <tr>
-                    <th>제품명</th>
-                    <th>중량(g/ml)</th>
-                    <th>열량(Kcal)</th>
-                    <th>단백질(g)</th>
-                    <th>나트륨(mg)</th>
-                    <th>당류(g)</th>
-                    <th>포화지방(g)</th>
-                    <th>카페인(mg)</th>
-                </tr>
-                <tr>
-                    <th>콰트로 맥시멈...이하생략4</th>
-                    <td>535</td>
-                    <td>1614</td>
-                    <td>104(189)</td>
-                    <td>1955(98)</td>
-                    <td>12</td>
-                    <td>44(291)</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <th>콰트로 맥시멈...이하생략4 세트</th>
-                    <td>1013</td>
-                    <td>2049</td>
-                    <td>108(196)</td>
-                    <td>2297(115)</td>
-                    <td>51</td>
-                    <td>47(311)</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <th>콰트로 맥시멈...이하생략4 라지세트</th>
-                    <td>1208</td>
-                    <td>2206</td>
-                    <td>109(198)</td>
-                    <td>2409(120)</td>
-                    <td>68</td>
-                    <td>48(318)</td>
-                    <td>0</td>
-                </tr>
-            </table>
-            
-        </div>
-    </main>
+        <ul class="ingredient">
+            <li>
+                <h2>영양성분</h2>
+                <a href="#" class="click">+</a>
+            </li>
+            <li class="active">
+                <p>Tablet, PC 버전에서 확인하실 수 있습니다.</p>
+                <table>
+                    <tr>
+                        <th>제품명</th>
+                        <th><span>중량</span><br><span>(g/ml)</span></th>
+                        <th><span>열량</span><br><span>(Kcal)</span></th>
+                        <th><span>단백질</span><br><span>(g)</span></th>
+                        <th><span>나트륨</span><br><span>(mg)</span></th>
+                        <th><span>당류</span><br><span>(g)</span></th>
+                        <th><span>포화지방</span><br><span>(g)</span></th>
+                        <th><span>카페인</span><br><span>(mg)</span></th>
+                    </tr>
+                    <tr>
+                        <th><span>콰트로 </span><span>맥시멈</span><span>... 이하생략</span><span>4</span></th>
+                        <td>535</td>
+                        <td>1614</td>
+                        <td>104(189)</td>
+                        <td>1955(98)</td>
+                        <td>12</td>
+                        <td>44(291)</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th><span>콰트로 </span><span>맥시멈</span><span>... 이하생략</span><span>4 </span><span>세트</span></th>
+                        <td>1013</td>
+                        <td>2049</td>
+                        <td>108(196)</td>
+                        <td>2297(115)</td>
+                        <td>51</td>
+                        <td>47(311)</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <th><span>콰트로 </span><span>맥시멈</span><span>... 이하생략</span><span>4 </span><span>라지세트</span></th>
+                        <td>1208</td>
+                        <td>2206</td>
+                        <td>109(198)</td>
+                        <td>2409(120)</td>
+                        <td>68</td>
+                        <td>48(318)</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <ul class="wonsanji">
+            <li>
+                <h2>원산지</h2>
+                <a href="#" class="click">+</a>
+            </li>
+            <li class="active">
+                <img src="./images_main/cow.png" alt="">
+                <ul>쇠고기
+                    <li>와퍼 / 버거패티 : 뉴질랜드산과 호주산 혼합</li>
+                    <li>스테이크패티 : 뉴질랜드산과 호주산 혼합 (몬스터 X, 스모키바비큐X)</li>
+                </ul>
+                <img src="./images_main/pig.png" alt="">
+                <ul>돼지고기
+                    <li>베이컨 : 미국산</li>
+                    <li>스모키바비큐 : 네덜란드산(스모키바비큐와퍼, 스모키바비큐X, 스모키바비큐몬스터)</li>
+                </ul>
+                <img src="./images_main/chicken.png" alt="">
+                <ul>닭고기
+                    <li>국내산 : 너겟킹, (불고기)롱치킨버거, 몬스터와퍼, 몬스터X, 불고기몬스터,<br> 앵그리너겟킹, (바비큐)치킨버거, 스모키바비큐몬스터</li>
+                    <li>외국산(덴마크산, 스웨덴산, 태국산 등) : 바삭킹</li>
+                    <li>외국산(브라질산, 태국산, 미국산 등) : 치킨킹, 치킨킹BLT</li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="allergy">
+            <li>
+                <h2>알레르기</h2>
+                <a href="#" class="click">+</a>
+            </li>
+            <li class="active">
+                <table>
+                    <tr>
+                        <th>콰트로 맥시멈...이하생략4</th>
+                        <td>밀, 대두, 우유, 돼지고기, 쇠고기, 난류</td>
+                    </tr>
+                    <tr>
+                        <th>콰트로 맥시멈...이하생략4 세트</th>
+                        <td>밀, 대두, 우유, 돼지고기, 쇠고기, 난류</td>
+                    </tr>
+                    <tr>
+                        <th>콰트로 맥시멈...이하생략4 라지세트</th>
+                        <td>밀, 대두, 우유, 돼지고기, 쇠고기, 난류</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+        <ul class="alert">
+            <li class="active_al">
+                <h2>알림</h2>
+                <a href="#" class="click">+</a>
+            </li>
+            <li class="active">
+                <p>1. 각 제품은 원재료의 수급 상황에 따라 구성성분이 다소 변경될 수도 있습니다.</p>  
+                <p>2. 표시된 영양성분표는 매장에서 판매되고 있는 모든 제품의 영양성분을 포함하지 못할 수도 있습니다.<br>
+                    (신제품 / 특정계절 한지판매 제품 / 일부 매장 특별 판매 제품)</p>
+                <p>3. 표시된 영양 구성성분은 실험방법 등에 따라 차이가 있을 수도 있습니다.</p>
+                <p>4. 영양표 속의 모든 제품은 표준 용량이며, 실제 제공시 다소 차이가 있을 수 있습니다.</p>
+                <p>5. 괄호한 %는 1일 영양소 기준치에 대한 비율입니다.</p>
+                <p>6. 아이스 아메리카노, 아메리카노는 고카페인 함유 음료로 어린이, 임산부, 카페인 민감자는 섭취에 주의해 주시기 바랍니다.</p>
+            </li>
+        </ul>
+        <?php include("footer.php") ?>
+        <script src="./scripts/common.js"></script>
+        <script src="./scripts/detail_script.js"></script>
 </body>
 </html>

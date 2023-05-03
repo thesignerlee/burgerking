@@ -7,4 +7,236 @@
   bottom: 5%;
   background: url(../images/up.png) no-repeat;
   background-size: cover;
+}
+
+main {
+  width: 1440px;
+  margin: 0 auto;
+}
+main .introduce {
+  width: 1440px;
+  height: 230px;
+  background: url(../images_main/bg_f.jpg) no-repeat;
+  margin-top: 100px;
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-flow: column wrap;
+}
+main .introduce > h1 {
+  font-size: 3rem;
+  font-family: jua;
+  color: #fff;
+  padding: 0 30px;
+  padding-top: 30px;
+}
+main .introduce span {
+  line-height: 2;
+  color: #fff;
+  padding: 0 30px;
+}
+main .introduce .nav {
+  padding: 0 30px;
+}
+main .introduce .nav a {
+  color: #fff;
+  line-height: 3;
+  padding-bottom: 1px;
+  display: inline;
+}
+main .introduce .nav a:nth-child(2) {
+  margin: 0 20px;
+}
+main .introduce .nav a:last-child {
+  margin-left: 20px;
+}
+main .introduce .nav a::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #ee3224;
+  border-radius: 100%;
+  display: inline-block;
+  transform: translate(13px, -3px);
+}
+main .introduce .nav a:last-child::after {
+  display: none;
+}
+main .introduce .nav a:hover {
+  border-bottom: 1px dashed #fff;
+  padding-bottom: 1px;
+  color: #ee3224;
+}
+main .quatro_detail {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+main .quatro_detail .title {
+  margin-top: 50px;
+}
+main .quatro_detail .title span {
+  display: block;
+  text-align: center;
+  font-family: jua;
+}
+main .quatro_detail .title span:first-child {
+  font-size: 3rem;
+}
+main .quatro_detail .title span:last-child {
+  font-size: 1.25rem;
+  color: #aaa;
+  line-height: 3;
+}
+main .quatro_detail .picture {
+  text-align: center;
+  margin-top: 25px;
+}
+main .quatro_detail .picture img {
+  width: 100%;
+}
+main .quatro_detail .describe {
+  text-align: center;
+  margin-top: 100px;
+}
+main .quatro_detail .describe span {
+  display: block;
+  color: #aaa;
+  line-height: 1.5;
+  font-family: jua;
+}
+main > ul {
+  width: 80%;
+  margin: 0 auto;
+}
+main > ul .active {
+  display: none;
+}
+main > ul li {
+  font-family: jua;
+}
+main > ul li img {
+  display: inline-block;
+}
+main > ul li h2 {
+  font-size: 2rem;
+  font-family: jua;
+}
+main > ul li a {
+  font-size: 3rem;
+  font-family: NotoSansKR;
+}
+main > ul li table {
+  margin-top: 30px;
+  text-align: center;
+}
+main > ul li table tr th {
+  text-align: start;
+  padding: 25px;
+  font-family: jua;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+main > ul li table tr th span {
+  font-family: jua;
+}
+main > ul li table tr th:first-child {
+  border-right: 2px solid #000;
+}
+main > ul li table tr td {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 25px;
+}
+main > ul li table tr:first-child th {
+  border-bottom: 2px solid #aaa;
+}
+main > ul li table tr:first-child td {
+  border-bottom: 2px solid #aaa;
+}
+main > ul li table tr:nth-child(2) th {
+  border-bottom: 2px solid #aaa;
+}
+main > ul li table tr:nth-child(2) td {
+  border-bottom: 2px solid #aaa;
+}
+main > ul li table tr:nth-child(3) th {
+  border-bottom: 2px solid #aaa;
+}
+main > ul li table tr:nth-child(3) td {
+  border-bottom: 2px solid #aaa;
+}
+main > ul li ul li {
+  line-height: 1.8;
+}
+main > ul > li:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  padding-bottom: 20px;
+}
+main > ul > li:first-child a {
+  transform: translateY(-7px);
+}
+main .ingredient {
+  margin-top: 60px;
+}
+main .ingredient li p {
+  font-family: jua;
+  margin-top: 30px;
+  display: none;
+}
+main .ingredient li table tr:first-child th {
+  text-align: center;
+}
+main .wonsanji {
+  margin-top: 30px;
+}
+main .wonsanji li {
+  display: flex;
+  align-items: center;
+}
+main .wonsanji li img {
+  transform: translateY(50px);
+}
+main .wonsanji li ul {
+  font-size: 2rem;
+  font-family: jua;
+  padding: 0 100px;
+}
+main .wonsanji li ul li:first-child {
+  margin-top: 10px;
+}
+main .wonsanji .active {
+  display: none;
+}
+main .allergy {
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .allergy li table tr th {
+  border-right: 2px solid #000;
+}
+main .allergy li table tr:nth-child(3) th {
+  border-bottom: 2px solid #000;
+}
+main .allergy li table tr:nth-child(3) td {
+  border-bottom: 2px solid #000;
+}
+main .alert {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+main .alert .active_al {
+  line-height: 0;
+}
+main .alert li p {
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  font-family: jua;
+}
+main .alert li p:first-child {
+  margin-top: 30px;
 }/*# sourceMappingURL=detail.css.map */

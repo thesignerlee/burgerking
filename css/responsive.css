@@ -7,7 +7,6 @@
     /* 서브페이지1 */
     main .introduce {width:100%; height: auto;}
     main > h1 {width: 100%;}
-
 }/*1440*/
 @media screen and (max-width:1024px) {
     /* 메인페이지 */
@@ -37,8 +36,11 @@ header .h_right .nav_m > ul > li > .sub {}
 footer .left p {display:none;}
 /* 서브페이지1 */
 main .new_menu .menu .group .hamburger a {width:80%; margin-left: 10%;}
+/* 서브페이지2 */
+main > .ingredient > .active table tr:nth-child(2) span:nth-child(3) {display:none;}
+main > .ingredient > .active table tr:nth-child(3) span:nth-child(3) {display:none;}
+main > .ingredient > .active table tr:nth-child(4) span:nth-child(3) {display:none;}
 }
-
 /*1024*/
 /* 메인페이지 */
 @media screen and (max-width:864px) {
@@ -48,8 +50,11 @@ main .new_menu .menu .group .hamburger a {width:80%; margin-left: 10%;}
     
 /* 서브페이지1 */
 
+/* 서브페이지2 */
+main > .ingredient > .active table {display:none;}
+main > .ingredient > .active  p {display:block;}
 }
-/*800*/
+/*864*/
 /* 메인페이지 */
 @media screen and (max-width:684px) {
     
